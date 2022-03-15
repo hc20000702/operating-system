@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+aioredis==2.0.1
+passlib
+python-jose
+sqlalchemy
+pymysql
+pika
+starlette
+pydantic

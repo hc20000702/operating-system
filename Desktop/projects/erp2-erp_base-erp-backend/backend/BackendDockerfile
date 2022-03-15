@@ -1,0 +1,17 @@
+# docker login ccr.ccs.tencentyun.com --username=100011330173
+# 然后输入密码HNlg12138
+# docker buildx build -t ccr.ccs.tencentyun.com/erp_plus/backend --push .
+# docker build -t ccr.ccs.tencentyun.com/erp_plus/backend .
+FROM python:3.9-slim
+
+EXPOSE 8000
+
+RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+COPY src /code
+
+WORKDIR /code
+
+RUN pip install -r /code/requirements.txt
+
+ENTRYPOINT ["python", "/code/main.py"]

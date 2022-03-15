@@ -1,0 +1,13 @@
+TDSQL-C连接：
+	地址：gz-cynosdbmysql-grp-izok5e41.sql.tencentcdb.com
+	端口：27939
+	用户名：erp
+	密码：ERPplus2022
+	schema：erp
+Redis连接：
+	地址：gz-crs-bvlvxn0v.sql.tencentcdb.com
+	端口：26297
+	用户名：erp
+	密码：ERPplus2022
+	db：1-5你们随便用
+    校验方法：redis连接时密码直接输入erp@ERPplus2022
